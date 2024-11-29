@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ⚡ lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>ЦИФРОВАЯ ЭКОСИСТЕМА КОСМОС</title>
+    <link rel="stylesheet" href="https://cdn.ampproject.org/v0.css">
+    <style amp-custom>
+        body {
+            font-size: 16px;
+            background-color: #1e1e2e;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #000;
+            color: #ff9800;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header__logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header__nav .nav__list {
+            display: flex;
+            gap: 20px;
+        }
+        .header__nav .nav__list .nav__item a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background: url('space_bg.jpg') no-repeat center center / cover;
+        }
+        .intro__text {
+            max-width: 50%;
+        }
+        .intro__text h1 {
+            font-size: 36px;
+            color: #ffffff;
+        }
+        .intro__form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+        .intro__form input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        .intro__form .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">ЦИФРОВАЯ ЭКОСИСТЕМА КОСМОС</div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#">Особенности</a></li>
+                <li class="nav__item"><a href="#">О проекте</a></li>
+                <li class="nav__item"><a href="#">Цены</a></li>
+                <li class="nav__item"><a href="#">Отзывы</a></li>
+                <li class="nav__item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro__text">
+            <h1>Покорение Космоса и Цифровые Экосистемы</h1>
+            <p>Юрий Гагарин, первый человек в космосе, стал символом научного прорыва и инноваций, которые сегодня находят отражение в цифровых экосистемах.</p>
+            <p>Цифровые экосистемы представляют собой интеграцию технологий, данных и сетей, которые работают вместе, чтобы улучшить жизнь людей и обеспечить устойчивое развитие.</p>
+            <button class="btn">Подробнее</button>
+        </div>
+        <div class="intro__form">
+            <h2>Попробуйте бесплатно</h2>
+            <form method="post" action-xhr="/submit">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button class="btn" type="submit">Начать</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ЦИФРОВАЯ ЭКОСИСТЕМА КОСМОС. Все права защищены.</p>
+    </footer>
+</body>
+</html>
